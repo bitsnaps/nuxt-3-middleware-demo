@@ -1,4 +1,5 @@
 export default defineNuxtRouteMiddleware((to, from) => {
+    console.log('----- Profile middleware');
     const isAuthenticated = useCookie('is-authenticated')
     const currentUser = useCookie('current-user')
     
